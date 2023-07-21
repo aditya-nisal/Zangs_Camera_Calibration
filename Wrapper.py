@@ -134,7 +134,7 @@ def final_error(A, K, homographies, corners):
     return error
 
 def main():
-  img = ["IMG_20170209_042606.jpg", "IMG_20170209_042608.jpg", "IMG_20170209_042610.jpg", "IMG_20170209_042612.jpg", "IMG_20170209_042614.jpg", "IMG_20170209_042616.jpg", "IMG_20170209_042619.jpg", "IMG_20170209_042621.jpg", "IMG_20170209_042624.jpg", "IMG_20170209_042627.jpg", "IMG_20170209_042629.jpg", "IMG_20170209_042630.jpg", "IMG_20170209_042634.jpg"]
+  img = ["data/IMG_20170209_042606.jpg", "data/IMG_20170209_042608.jpg", "data/IMG_20170209_042610.jpg", "data/IMG_20170209_042612.jpg", "data/IMG_20170209_042614.jpg", "data/IMG_20170209_042616.jpg", "data/IMG_20170209_042619.jpg", "data/IMG_20170209_042621.jpg", "data/IMG_20170209_042624.jpg", "data/IMG_20170209_042627.jpg", "data/IMG_20170209_042629.jpg", "data/IMG_20170209_042630.jpg", "data/IMG_20170209_042634.jpg"]
 
   images = read_image(img)
 
@@ -239,7 +239,7 @@ def main():
         cv2.circle(undist, (int(corners2[0, k]), int(
             corners2[1, k])), 5, (0, 0, 255), 7)
 
-      cv2.imwrite("IMG_UNDISTORTED_" + str(index)+".jpg", undist)
+      cv2.imwrite("data/IMG_UNDISTORTED_" + str(index)+".jpg", undist)
 
 
 
